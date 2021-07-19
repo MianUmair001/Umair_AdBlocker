@@ -1,0 +1,24 @@
+{
+  "name": "Umair AdBlocker",
+  "version": "1",
+  "description": "AdBlocker to Block Ads",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "http://*/",
+    "https://*/"
+  ],
+  "background": {
+    "scripts": ["blocked_sites.js", "background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/logo_16x16.png",
+    "48": "icons/logo_48x48.png",
+    "128": "icons/logo_128x128.png"
+  },
+  "manifest_version": 2
+}
